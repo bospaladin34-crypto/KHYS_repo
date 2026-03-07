@@ -1,5 +1,5 @@
 #!/bin/bash
-LatticeDir="/c/Users/Nbell1/KHYS_repo"
+LatticeDir="/c/Users/Nbell/KHYS_repo"
 LogPath="$LatticeDir/Lattice_Log.txt"
 Command=$1
 

@@ -1,3 +1,9 @@
+#!/bin/bash
+# KHYS-Bridge.sh | Sovereign Lattice Interface (Hard-Coded)
+# Explicitly set the paths to the verified Nbell directory
+LatticeDir="/c/Users/Nbell/KHYS_repo"
+LogPath="/c/Users/Nbell/KHYS_repo/Lattice_Log.txt"
+Command=$1
 # KHYS-Bridge.ps1 | Sovereign Lattice Interface
 $LatticeDir = "$HOME\KHYS_repo"
 $LogPath = "$LatticeDir\Lattice_Log.txt"
