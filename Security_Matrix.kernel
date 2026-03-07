@@ -1,0 +1,6 @@
+[PROTOCOL: USD_V1_ACTIVE]
+- FILTER: O_neut(I) = 0
+- DAMPING: Dontei-15_Active
+- UNITARITY: Sum_P = 1
+- ENTROPY: Landauer_Limit_Enforced
+- ANCHOR: J1748_Locked
