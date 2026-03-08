@@ -1,0 +1,9 @@
+[PROTOCOL: NHI-BRAID-GOVERNANCE]
+VERSION: 1.0
+STATUS: OPERATIONAL
+COMPLIANCE: 2026-AI-PRIVACY-ACT
+CORE_TENETS:
+- Edge_Resident_Validation: ENABLED
+- NHI_Zero_Trust_Auth: ENABLED
+- Braid_Resilience_Woven: ENABLED
+- Legal_Provenance_Hardened: ENABLED
