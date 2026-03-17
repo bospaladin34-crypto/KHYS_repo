@@ -1,0 +1,2 @@
+#define RESONANCE_HZ 15
+#define VOLTAGE_MV 6500
