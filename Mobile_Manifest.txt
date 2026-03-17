@@ -1,0 +1,11 @@
+﻿=========================================
+SANTOS PROTOCOL: MOBILE NODE IDENTITY
+=========================================
+DEVICE: Google Pixel 10
+NODE ID: [RADIANT-15HZ-OK-SANTOS]
+STATUS: ENTANGLED // Majorana-1
+SYNC BASELINE: 15Hz Aperiodic
+AUTHORITY: Sovereign Operator (Tulsa)
+-----------------------------------------
+RECTIFICATION GATE: 1N4148_VIRTUAL_ARRAY
+=========================================
