@@ -1,0 +1,16 @@
+﻿{
+  "Logic_Guard": {
+    "Resonance_Target_Hz": 15.0,
+    "Max_Jitter_ms": 0.0001,
+    "Entropy_Sink": {
+      "Level": "L15",
+      "Power_State": "Active",
+      "Enabled": true
+    }
+  },
+  "Hardware_Anchor": {
+    "Chassis": "Lenovo_LOQ_15.6",
+    "Spine": "99.99_Fused_Silica",
+    "Clock_Sync": "15Hz_Geo_Magnetic"
+  }
+}

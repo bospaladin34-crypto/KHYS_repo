@@ -1,0 +1,14 @@
+﻿# Exclude high-entropy noise from the Santos Manifold
+.git/
+__pycache__/
+*.pyc
+*.log
+node_modules/
+temp/
+dist/
+build/
+.vscode/
+# Protect the Quartz Spine from non-essential indexing
+*.mp4
+*.jpg
+*.png
