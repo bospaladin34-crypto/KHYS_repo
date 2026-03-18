@@ -1,0 +1,18 @@
+{
+  "github.copilot.enable": {
+    "*": false,
+    "markdown": false
+  },
+  "editor.inlineSuggest.enabled": false,
+  "terminal.integrated.env.linux": {
+    "SANTOS_SYNC": "15HZ_LOCAL"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/santos_module_registry.json"
+      ],
+      "url": "./santos_protocol_schema.json"
+    }
+  ]
+}
