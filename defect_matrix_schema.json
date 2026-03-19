@@ -1,0 +1,10 @@
+{
+  "cycle": 42,
+  "D": {
+    "semantic": {"minor":0.0,"major":0.0,"critical":0.0},
+    "spectral": {"minor":0.0,"major":0.0,"critical":0.0},
+    "preservation": {"minor":0.0,"major":0.0,"critical":0.0}
+  },
+  "score": 0.0,
+  "action_required": false
+}

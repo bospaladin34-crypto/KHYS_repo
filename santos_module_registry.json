@@ -1,0 +1,9 @@
+[
+  "ALP_Sequence.logic",
+  "DefectScoring.logic",
+  "IP_Core_Seed.logic",
+  "ReversibleStateTransition.logic",
+  "Santos_Protocol_Adaptive.spec",
+  "Santos_Protocol_Core.logic",
+  "Santos_Protocol_Middleware.config"
+]

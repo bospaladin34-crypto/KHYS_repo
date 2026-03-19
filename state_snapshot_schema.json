@@ -1,0 +1,22 @@
+{
+  "id": "string",
+  "cycle": 42,
+  "intent_repr": "<vector or symbolic>",
+  "structure_repr": "<AST/graph>",
+  "spectral_repr": {
+    "f_A": 15.0,
+    "f_S": 7.0,
+    "role_usage": {
+      "architect_intent_ops": 3,
+      "architect_structure_ops": 1,
+      "synthesizer_structure_ops": 4,
+      "synthesizer_intent_ops": 0
+    }
+  },
+  "audit_repr": {
+    "expected_events": ["intent","proposal","revision"],
+    "logged_events": ["intent","proposal"],
+    "lineage_ok": false
+  },
+  "metadata": {}
+}

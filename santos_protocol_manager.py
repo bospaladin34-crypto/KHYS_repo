@@ -32,6 +32,21 @@ def load_registry():
 
 def auto_discover_modules(search_dirs=None):
     discovered = set(MODULES)
+    base = os.path.dirname(__file__)
+    if search_dirs is None:
+        search_dirs = [base, os.path.join(base, "plugins")]
+
+    for directory in search_dirs:
+        if not os.path.isdir(directory):
+            continue
+        try:
+            for entry in os.listdir(directory):
+                if entry.endswith(('.logic', '.spec', '.config')):
+                    discovered.add(entry)
+        except Exception:
+            continue
+
+    return sorted(list(discovered))
 
 
 def load_knowledge_corpus():

@@ -98,5 +98,77 @@
       "interface": "127.0.0.1",
       "port": 8081
     }
+  },
+  {
+    "timestamp": "2026-03-19T19:40:55.136682Z",
+    "action": "load_registry",
+    "details": {
+      "module_count": 5,
+      "modules": [
+        "ALP_Sequence.logic",
+        "IP_Core_Seed.logic",
+        "Santos_Protocol_Adaptive.spec",
+        "Santos_Protocol_Core.logic",
+        "Santos_Protocol_Middleware.config"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T19:40:57.821939Z",
+    "action": "load_registry",
+    "details": {
+      "module_count": 5,
+      "modules": [
+        "ALP_Sequence.logic",
+        "IP_Core_Seed.logic",
+        "Santos_Protocol_Adaptive.spec",
+        "Santos_Protocol_Core.logic",
+        "Santos_Protocol_Middleware.config"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T19:45:40.621747Z",
+    "action": "create_module",
+    "details": {
+      "module": "ReversibleStateTransition.logic",
+      "status": "DESIGN",
+      "version": "0.1",
+      "dependencies": [
+        "Santos_Protocol_Core"
+      ],
+      "keys": {}
+    }
+  },
+  {
+    "timestamp": "2026-03-19T19:45:50.663732Z",
+    "action": "load_registry",
+    "details": {
+      "module_count": 6,
+      "modules": [
+        "ALP_Sequence.logic",
+        "IP_Core_Seed.logic",
+        "ReversibleStateTransition.logic",
+        "Santos_Protocol_Adaptive.spec",
+        "Santos_Protocol_Core.logic",
+        "Santos_Protocol_Middleware.config"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T19:51:25.176006Z",
+    "action": "load_registry",
+    "details": {
+      "module_count": 7,
+      "modules": [
+        "ALP_Sequence.logic",
+        "DefectScoring.logic",
+        "IP_Core_Seed.logic",
+        "ReversibleStateTransition.logic",
+        "Santos_Protocol_Adaptive.spec",
+        "Santos_Protocol_Core.logic",
+        "Santos_Protocol_Middleware.config"
+      ]
+    }
   }
 ]
