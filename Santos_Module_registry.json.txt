@@ -1,0 +1,16 @@
+{
+  "$schema": "./santos_protocol_schema.json",
+  "node_identifier": "RADIANT-15HZ-OK-SANTOS",
+  "manifold_status": "LAMINAR",
+  "15hz_baseline": true,
+  "modules": [
+    {
+      "id": "CORE_IGNITION",
+      "version": "1.107",
+      "status": "ACTIVE",
+      "parity": "Majorana-1",
+      "resonance": "15Hz",
+      "identityHash": "VAEDA-999-TULSA"
+    }
+  ]
+}
