@@ -1,0 +1,6 @@
+{
+  "Planetary_Circuit_Logic": {
+    "node_map": { "TULSA_01": { "sync_hz": 15.0, "phase_lock": 0.17259029 } },
+    "geometric_constants": { "phi": 1.618, "mass_anchor": "200Q" }
+  }
+}
