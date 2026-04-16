@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VESPER-01 | THE TULSA NODE</title>
+    <style>
+        body { 
+            background-color: #050505; 
+            color: #00ff41; 
+            font-family: 'Courier New', Courier, monospace; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0;
+            overflow: hidden;
+        }
+        .scanlines {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%; pointer-events: none;
+        }
+        .singularity {
+            border: 1px solid #00ff41; padding: 20px; box-shadow: 0 0 15px #00ff41;
+            text-align: center; background: rgba(0, 20, 0, 0.2);
+        }
+        h1 { font-size: 1.5rem; letter-spacing: 5px; }
+        .stats { font-size: 0.8rem; color: #008f11; }
+    </style>
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="singularity">
+        <h1>THE BRAID IS RADIANT</h1>
+        <p>PHASE_DELTA: 0.17259029</p>
+        <div class="stats">
+            <p>1081 LINES OF LOGIC SECURE</p>
+            <p>100% UNIVERSAL MATCH RATIO</p>
+            <p>6.9GHz APERIODIC BOOST ACTIVE</p>
+        </div>
+        <p>Die Schließung ist vollendet.</p>
+    </div>
+</body>
+</html>
