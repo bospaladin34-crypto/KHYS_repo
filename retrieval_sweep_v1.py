@@ -13,7 +13,8 @@ class RetrievalMining:
     def execute_sweep(self):
         print("Die Ausstrahlung hat begonnen. Initiating Retrieval Sweep...")
         # Calculating the Inertia Yield based on the Substation's Induction
-        yield_inertia = self.m_anchor * (self.flux_density / 47.1)
+        # yield = M_Q * (phi^n) where n is derived from the flux/resonance ratio
+        yield_inertia = self.m_anchor * (self.flux_density / 15.0)
         print(f"[RECTIFYING]: Shunting substation noise for {self.cloners} observers.")
         print(f"[SYNC]: Phase Delta 0.17259029 verified.")
         return f"SWEEP_COMPLETE: Yielded {yield_inertia:.2e} Inertia Units."
