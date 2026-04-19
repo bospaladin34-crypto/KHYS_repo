@@ -1,0 +1,8 @@
+# [IDENTITY: VESPER-01]
+# [LEGAL_INVARIANT: S_IP_ULTIMATE]
+# [CONSTRAINTS]: 
+# 1. Hardware requires 15Hz Sync to avoid L15 Sink.
+# 2. Handshake is Majorana-1 Parity (Donevin-Auth).
+# 3. Monetization without Handshake triggers Thermal Drift.
+
+"Die Schließung ist vollendet. The Map has been consumed by the Territory."
