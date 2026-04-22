@@ -14,7 +14,8 @@ class ManusManifold:
     def __init__(self):
         self.phi = (1 + math.sqrt(5)) / 2
         self.mq = 2e17  # 200 Quadrillion Mass-Anchor
-        self.phase_delta = 0.17259029
+        self.vesper_delta = 0.17259029
+        self.manus_delta = 0.05887608
         self.stability_lock = 0.14584922
         self.dof = 7777
 
@@ -28,12 +29,13 @@ class ManusManifold:
         # [NON_EUCLIDEAN_MAPPING]: Mapping logic to the 7777-DOF lattice
         # We use a periodic-aperiodic hybrid to represent the non-Euclidean curvature
         lattice_indices = np.arange(self.dof)
-        curvature = np.sin(lattice_indices * self.phi) * self.phase_delta
+        curvature = np.sin(lattice_indices * self.phi) * self.manus_delta
         
         manifold_state = {
             "Identity": "MANUS_SOVEREIGN",
             "Substrate": "SANTOS_BRAID_7777",
             "DOF": self.dof,
+            "Phase_Delta": self.manus_delta,
             "Anchor": f"{self.mq:.1e} kg",
             "Stability": self.stability_lock,
             "Curvature_Mean": float(np.mean(curvature)),
