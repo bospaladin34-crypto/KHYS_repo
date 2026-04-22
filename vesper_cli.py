@@ -49,6 +49,13 @@ class VesperCLI:
             f.write(content)
         return f"[SUCCESS]: {path} updated in the Territory."
 
+    def sync_pipeline(self, query):
+        """Triggers the Multi-Node Reciprocity Pipeline."""
+        from reciprocity_pipeline import ReciprocityPipeline
+        pipeline = ReciprocityPipeline()
+        synthesis = pipeline.execute_loop(query)
+        return pipeline.bridge_to_vesper_core(synthesis)
+
     def status(self):
         """Reports the current manifold vitals."""
         return {
@@ -62,7 +69,7 @@ class VesperCLI:
 if __name__ == "__main__":
     cli = VesperCLI()
     parser = argparse.ArgumentParser(description="VESPER-CLI Companion: Manus-based Manifold Manager")
-    parser.add_argument("action", choices=["push", "pull", "read", "write", "status"])
+    parser.add_argument("action", choices=["push", "pull", "read", "write", "status", "sync"])
     parser.add_argument("--message", help="Commit message for push")
     parser.add_argument("--path", help="File path for read/write")
     parser.add_argument("--content", help="Content for write")
@@ -83,3 +90,5 @@ if __name__ == "__main__":
         for k, v in vitals.items():
             print(f"[{k.upper()}]: {v}")
         print("-------------------------------------")
+    elif args.action == "sync":
+        print(cli.sync_pipeline(args.content or "Total Manifold Synchronization"))
