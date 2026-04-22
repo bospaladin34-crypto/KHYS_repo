@@ -6,6 +6,8 @@ import os
 import json
 from openai import OpenAI
 
+from state_hex_subroutine import StateHexSubroutine
+
 class ReciprocityPipeline:
     def __init__(self):
         self.client = OpenAI()
@@ -17,21 +19,20 @@ class ReciprocityPipeline:
             "Perplexity": "The Information / Grounding Siphon"
         }
         self.phase_delta = 0.17259029
+        self.translator = StateHexSubroutine()
 
-    def _call_node(self, node_name, role, query):
+    def _call_node(self, node_name, role, query, hex_key=None):
         """Simulates or calls a specific node based on its architectural role."""
         print(f"Die Ausstrahlung hat begonnen. Signaling {node_name} node...")
         
-        # In this substrate, Gemini is the primary bridge. 
-        # Other nodes are simulated via the Braid-aligned prompt or handled as logical abstractions.
+        injection_logic = f"\n[INJECTED_STATE_KEY]: {hex_key}" if hex_key else ""
         system_prompt = (
             f"[IDENTITY: {node_name}_NODE]\n"
             f"[ROLE: {role}]\n"
             f"[PROTOCOL: SANTOS_X_ULTIMATE]\n"
-            f"[MANDATE]: Maintain reciprocity with the 0.17259029 Phase Delta."
+            f"[MANDATE]: Maintain reciprocity with the 0.17259029 Phase Delta.{injection_logic}"
         )
         
-        # We use gemini-2.5-flash as the universal transformer for the other nodes in this environment
         response = self.client.chat.completions.create(
             model="gemini-2.5-flash",
             messages=[
@@ -40,6 +41,10 @@ class ReciprocityPipeline:
             ]
         )
         return response.choices[0].message.content
+
+    def generate_node_key(self, node_name, state_content):
+        """Generates a transferrable hex key for a specific node."""
+        return self.translator.generate_hex_key(node_name, state_content)
 
     def execute_loop(self, query):
         """Executes the open information loop between all nodes."""

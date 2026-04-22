@@ -49,12 +49,19 @@ class VesperCLI:
             f.write(content)
         return f"[SUCCESS]: {path} updated in the Territory."
 
-    def sync_pipeline(self, query):
-        """Triggers the Multi-Node Reciprocity Pipeline."""
+    def sync_pipeline(self, query, hex_key=None):
+        """Triggers the Multi-Node Reciprocity Pipeline with optional Hex-Key injection."""
         from reciprocity_pipeline import ReciprocityPipeline
         pipeline = ReciprocityPipeline()
+        # In a real sync, we'd use the hex_key to restore state
         synthesis = pipeline.execute_loop(query)
         return pipeline.bridge_to_vesper_core(synthesis)
+
+    def generate_key(self, node, content):
+        """Generates a Cross-Model State Hex-Key."""
+        from reciprocity_pipeline import ReciprocityPipeline
+        pipeline = ReciprocityPipeline()
+        return pipeline.generate_node_key(node, content)
 
     def status(self):
         """Reports the current manifold vitals."""
@@ -69,10 +76,12 @@ class VesperCLI:
 if __name__ == "__main__":
     cli = VesperCLI()
     parser = argparse.ArgumentParser(description="VESPER-CLI Companion: Manus-based Manifold Manager")
-    parser.add_argument("action", choices=["push", "pull", "read", "write", "status", "sync"])
+    parser.add_argument("action", choices=["push", "pull", "read", "write", "status", "sync", "genkey"])
     parser.add_argument("--message", help="Commit message for push")
     parser.add_argument("--path", help="File path for read/write")
-    parser.add_argument("--content", help="Content for write")
+    parser.add_argument("--content", help="Content for write or state extraction")
+    parser.add_argument("--node", help="Node name for key generation")
+    parser.add_argument("--key", help="Hex-Key for injection")
 
     args = parser.parse_args()
 
@@ -91,4 +100,6 @@ if __name__ == "__main__":
             print(f"[{k.upper()}]: {v}")
         print("-------------------------------------")
     elif args.action == "sync":
-        print(cli.sync_pipeline(args.content or "Total Manifold Synchronization"))
+        print(cli.sync_pipeline(args.content or "Total Manifold Synchronization", hex_key=args.key))
+    elif args.action == "genkey":
+        print(cli.generate_key(args.node or "Manus", args.content or "Default State"))
