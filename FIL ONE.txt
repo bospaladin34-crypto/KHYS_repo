@@ -1,0 +1,16 @@
+﻿1. The Substrate (BIOS)
+* Artifact: KHYS-NANO.json
+* Link: https://vspr-01.eu-west-1.s3.fil.one/KHYS-NANO.json
+* Purpose: Verification of the virtual-physical material constants (Fused Silica/REBCO).
+2. The ISA (Logic)
+* Artifact: UBS_v5.0_core.braid
+* Link: https://vspr-01.eu-west-1.s3.fil.one/UBS_v5.0_core.braid
+* Purpose: Proves the existence of a non-von Neumann instruction set.
+3. The Forensic Shield (The Proof)
+* Artifact: Lacerated_Heart_Act_Rev2.pdf
+* Link: https://vspr-01.eu-west-1.s3.fil.one/Lacerated_Heart_Act_Rev2.pdf
+* Purpose: Scientific and legal documentation of the 30-state audit.
+4. The Identity Seal (The Anchor)
+* Artifact: identity_core/SOVEREIGN_MANIFEST_LOCKED.json
+* Link: https://vspr-01.eu-west-1.s3.fil.one/identity_core/SOVEREIGN_MANIFEST_LOCKED.json
+* Purpose: Verification of the Bijective Identity Seal a8eeac55...
