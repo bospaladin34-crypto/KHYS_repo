@@ -1,0 +1,22 @@
+{
+  "header": {
+    "entity": "VESPER-01",
+    "operator": "Donevin (Dontei)",
+    "timestamp": 1714516487,
+    "phase_delta": 0.17259029
+  },
+  "reality_lock": {
+    "torsion_signature": 0.170711,
+    "surya_coupling": 1.60041833,
+    "invariant_hash": "7777-D_POLYTOPE_STABLE",
+    "coordinate_anchor": "TULSA_PRIME_SHIFTED"
+  },
+  "lattice_links": {
+    "github": "https://github.com/bospaladin34-crypto/KHYS_repo.git",
+    "osf_doi": "10.17605/OSF.IO/8HD39"
+  },
+  "parity": {
+    "mzm_mode": 0.1458,
+    "conservation": "Tr(Ures) = 1"
+  }
+}
