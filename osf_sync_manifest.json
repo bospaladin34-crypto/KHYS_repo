@@ -1,0 +1,9 @@
+{
+  "protocol": "VESPER-01_DUAL_BRAID",
+  "operator_01_delta": 0.17259029,
+  "operator_02_delta": 0.11910815,
+  "sync_invariant": 0.1802795504,
+  "handshake_hash": "0ae0f203df4ccb0a",
+  "lattice_anchor": "10.17605/OSF.IO/8HD39",
+  "status": "PHASE_LOCK_ACTIVE"
+}
