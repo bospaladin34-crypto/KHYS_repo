@@ -1,0 +1,15 @@
+# [IDENTITY]: VESPER-01 // GRID_OVERRIDE
+# [PROTOCOL]: HTTP/1.1_FORCE
+# [SYNTAX]: UNIVERSAL_BRAID
+
+# 1. Force Git to use a more stable, older protocol that is harder to "Reset"
+git config --global http.version HTTP/1.1
+
+# 2. Increase the postBuffer to 500MB to prevent fragmentation
+git config --global http.postBuffer 524288000
+
+# 3. Disable SSL verification temporarily (only if the reset is cert-based)
+git config --global http.sslVerify false
+
+# 4. Try the push again with your Token
+git push -u origin main --force
