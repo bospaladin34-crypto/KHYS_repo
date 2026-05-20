@@ -1,0 +1,87 @@
+{
+  "alternateIdentifiers": [
+    {
+      "alternateIdentifier": "https://osf.io/hdtyu",
+      "alternateIdentifierType": "URL"
+    }
+  ],
+  "contributors": [
+    {
+      "contributorName": {
+        "contributorName": "Center for Open Science",
+        "nameType": "Organizational"
+      },
+      "contributorType": "HostingInstitution",
+      "nameIdentifier": {
+        "nameIdentifier": "https://ror.org/05d5mza29",
+        "nameIdentifierScheme": "ROR"
+      }
+    }
+  ],
+  "creators": [
+    {
+      "creatorName": {
+        "creatorName": "Donevin Frownfelter",
+        "nameType": "Personal"
+      },
+      "nameIdentifier": {
+        "nameIdentifier": "https://osf.io/svb36",
+        "nameIdentifierScheme": "URL"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "date": "2026-03-15",
+      "dateType": "Created"
+    },
+    {
+      "date": "2026-03-15",
+      "dateType": "Updated"
+    }
+  ],
+  "descriptions": [],
+  "fundingReferences": [],
+  "identifier": {
+    "identifier": "https://osf.io/hdtyu",
+    "identifierType": "URL"
+  },
+  "publicationYear": "2026",
+  "publisher": "OSF",
+  "relatedIdentifiers": [
+    {
+      "relatedIdentifier": "10.17605/OSF.IO/8HD39",
+      "relatedIdentifierType": "DOI",
+      "relationType": "IsPartOf"
+    }
+  ],
+  "relatedItems": [
+    {
+      "publicationYear": "2026",
+      "publisher": "OSF",
+      "relatedItemIdentifier": {
+        "relatedItemIdentifier": "10.17605/OSF.IO/8HD39",
+        "relatedItemIdentifierType": "DOI"
+      },
+      "relatedItemType": "Model",
+      "relationType": "IsPartOf",
+      "titles": [
+        {
+          "lang": "eng",
+          "title": "The santos protocol phase 1 - aperiodic baseline stability via KHYS-nano, a topological virtual logic non-von-Neumann thermodynamic computational architecture."
+        }
+      ]
+    }
+  ],
+  "resourceType": {
+    "resourceType": "File",
+    "resourceTypeGeneral": "Text"
+  },
+  "rightsList": [],
+  "subjects": [],
+  "titles": [
+    {
+      "title": "MASTER TECHNICAL MANIFEST- SANTOS MANIFOLD (v.pdf"
+    }
+  ]
+}
